@@ -1,0 +1,65 @@
+package models;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name="usuarios")
+public class usuario {
+	@Id
+	@Column(name="idUsuario")
+	public int idusuario;
+	
+	@Column(name="nombre")
+	public String nombre;
+	
+	@Column(name="apellido")
+	public String apellido;
+	
+	@Column(name="ciudad")
+	public String ciudad;
+	
+	public usuario(String nombre, String apellido, String ciudad) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.ciudad = ciudad;
+	}
+		
+	public int getIdusuario() {
+		return idusuario;
+	}
+	
+	public void setIdusuario(int idusuario) {
+		this.idusuario = idusuario;
+	}
+	
+	public String getNombre() {
+		return nombre;
+	}
+	
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	public String getApellido() {
+		return apellido;
+	}
+	
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+	
+	public String getCiudad() {
+		return ciudad;
+	}
+	
+	public void setCiudad(String ciudad) {
+		this.ciudad = ciudad;
+	}
+	
+	@Override
+	public String toString() {
+		return "usuario [idusuario=" + idusuario + ", nombre=" + nombre + ", apellido=" + apellido + ", ciudad="
+				+ ciudad + "]";
+	}
+}

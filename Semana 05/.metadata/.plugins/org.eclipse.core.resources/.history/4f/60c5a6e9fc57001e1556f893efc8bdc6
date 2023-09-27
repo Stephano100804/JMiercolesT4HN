@@ -1,0 +1,29 @@
+package controllers;
+import org.hibernate.SessionFactory;
+import org.hibernate.Session;
+import org.hibernate.cfg.Configuration;
+import models.Usuario;
+
+public class UsuarioController {
+
+	public String createUsuario(String nombre, String apellido, String ciudad) {
+		SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Usuario.class).buildSessionFactory();
+		
+		Session session = sessionFactory.openSession();
+		
+		try {
+			Usuario usu = new Usuario(nombre,apellido,ciudad);
+			
+			session.beginTransaction();
+			session.save(usu);
+			
+			sessionFactory.close();
+			
+		}
+		catch {
+			
+		}
+		return "Usuario Creado";
+		
+	}
+}

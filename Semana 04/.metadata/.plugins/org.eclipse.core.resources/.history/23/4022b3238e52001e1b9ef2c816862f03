@@ -1,0 +1,19 @@
+package controllers;
+
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import models.usuario;
+public class UsuarioController {
+	
+	public String createUsuario(String nombre, String apellido,String ciudad) {
+		
+		SessionFactory sessionFactory = (SessionFactory) new Configuration().configure("hibernate.cfg.xml");
+		
+		return "";
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,15 @@
+package controllers;
+
+public class UsuarioController {
+	
+	public String createUsuario() {
+		
+		
+		
+		return "";
+	}
+	
+	
+	
+	
+}

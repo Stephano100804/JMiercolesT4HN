@@ -1,0 +1,8 @@
+package com.cibertec;
+
+public class usuario {
+	public int idusuario;
+	public String nombre;
+	public String apellido;
+	public String ciudad;
+}

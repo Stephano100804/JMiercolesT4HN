@@ -1,0 +1,9 @@
+package models;
+
+public class Clientes {
+
+	private int idcliente;
+	private String nombre;
+	private String apellido;
+	private String distrito;
+}

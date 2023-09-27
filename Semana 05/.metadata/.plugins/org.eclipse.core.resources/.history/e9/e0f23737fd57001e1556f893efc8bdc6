@@ -1,0 +1,10 @@
+package Views;
+
+import controllers.UsuarioController;
+
+public class UsuarioView {
+	
+	public static void main(String[] args) {
+		String usuario= new UsuarioController("","","");
+	}
+}

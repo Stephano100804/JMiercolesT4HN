@@ -1,0 +1,6 @@
+package com.cibertec;
+
+public class usuario {
+	public int idusuario;
+	public string 
+}

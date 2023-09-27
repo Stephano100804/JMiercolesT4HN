@@ -1,0 +1,14 @@
+package Views;
+
+import controllers.UsuarioController;
+
+public class UsuarioView {
+	
+	public static void main(String[] args) {
+		String usuario= new UsuarioController().createUsuario("Renzo", "Cueva", "Lima");
+		System.out.println(usuario);
+		
+		String usuario= new UsuarioController().getUsuario("Renzo", "Cueva", "Lima");
+		System.out.println(usuario);
+	}
+}
